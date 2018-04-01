@@ -9,5 +9,6 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
+    <navigator url='/pages/share/index'>前往分享页面</navigator>
   </view>
 </view>
