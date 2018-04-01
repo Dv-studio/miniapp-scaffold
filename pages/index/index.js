@@ -2,6 +2,9 @@
 //获取应用实例
 const app = getApp()
 
+import { request } from '../../config/request'
+import { getDemo } from '../../config/api'
+
 Page({
   data: {
     motto: 'Hello World',
@@ -42,6 +45,9 @@ Page({
         }
       })
     }
+    request(getDemo).then(res => {
+      console.log(res.data.results)
+    })
   },
   getUserInfo: function(e) {
     console.log(e)
