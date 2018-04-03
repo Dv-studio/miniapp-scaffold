@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/share/index"
+    "pages/share/index",
+    "pages/test/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,6 +14,7 @@
   "tabBar": {
     "borderStyle": "white",
     "backgroundColor": "#f0f0f0",
+    "color": "#bfbfbf",
     "selectedColor": "black",
     "list": [
       {
