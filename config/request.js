@@ -1,13 +1,14 @@
-const request = (url, method = 'get', data = {}, header = {}) => {
+// 接口 Promise 化
+const request = (option = {}) => {
   wx.showLoading({
     title: '加载中',
   })
   return new Promise((resolve, reject) => {
     wx.request({
-      url,
-      method,
-      data,
-      header,
+      url: option.url || '',
+      method: option.method || 'get',
+      data: option.data || {},
+      header: option.header || {},
       success: function(data) {
         resolve(data)
         wx.hideLoading()

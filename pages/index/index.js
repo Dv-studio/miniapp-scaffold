@@ -55,7 +55,9 @@ Page({
         }
       })
     }
-    request(getDemo).then(res => {
+    request({
+      url: getDemo
+    }).then(res => {
       console.log(res.data.results)
     })
   },
