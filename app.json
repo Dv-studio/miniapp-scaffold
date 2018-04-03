@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/share/index",
-    "pages/test/index"
+    "pages/test/index",
+    "pages/mobx/mobx"
   ],
   "window": {
     "backgroundTextStyle": "light",
