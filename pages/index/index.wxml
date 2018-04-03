@@ -21,4 +21,10 @@
     bind:confirmEvent="_confirmEvent">
   </dialog>
   <button type="primary" bindtap="showDialog"> ClickMe! </button>
+  <view wx:for="{{list}}">
+    <card
+      title="{{ item.title }}"
+      content="{{ item.content }}">
+    </card>
+  </view>
 </view>

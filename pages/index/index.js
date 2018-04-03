@@ -10,7 +10,17 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    list: [
+      {
+        title: 'A',
+        content: 'A c'
+      },
+      {
+        title: 'B',
+        content: 'B c'
+      }
+    ]
   },
   //事件处理函数
   bindViewTap: function() {
