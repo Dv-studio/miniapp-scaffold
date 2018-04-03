@@ -87,5 +87,23 @@ Page({
   _confirmEvent() {
     console.log('你点击了确定');
     this.dialog.hideDialog();
+  },
+  onShareAppMessage: function (res) {
+    console.log(res)
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '哇，这个标题可以自定义呀',
+      path: '/pages/index/index?id=123',
+      imageUrl: '../../static/imgs/common/share.png',
+      success: function (res) {
+        // 转发成功
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    }
   }
 })

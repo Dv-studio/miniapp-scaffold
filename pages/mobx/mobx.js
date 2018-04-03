@@ -9,7 +9,6 @@ Page(observer({
   },
   // your other code below
   onLoad: function () {
-    console.log(this.props.todoStore)
   },
   handleAddTodo: function(title) {
     this.props.todoStore.addTodo('haah')
