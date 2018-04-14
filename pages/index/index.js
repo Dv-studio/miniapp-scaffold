@@ -2,7 +2,7 @@
 //获取应用实例
 const app = getApp()
 
-import { request } from '../../config/request'
+import { q } from '../../config/q'
 import { getDemo } from '../../config/api'
 
 Page({
@@ -55,7 +55,7 @@ Page({
         }
       })
     }
-    request({
+    q({
       url: getDemo
     }).then(res => {
       console.log(res.data.results)

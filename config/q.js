@@ -1,5 +1,5 @@
 // 接口 Promise 化
-const request = (option = {}) => {
+const q = (option = {}) => {
   wx.showLoading({
     title: '加载中',
   })
@@ -22,5 +22,5 @@ const request = (option = {}) => {
 }
 
 module.exports = {
-  request: request
+  q: q
 }
